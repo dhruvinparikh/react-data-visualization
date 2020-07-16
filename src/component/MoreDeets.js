@@ -1,15 +1,15 @@
 import React from "react";
 import "./Box.css";
-import Powerslap from "./video/powerslap.mp4";
+// import Powerslap from "./video/powerslap.mp4";
 import { ToastContainer, toast, Zoom, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 const MoreDeets = () => {
-  toast.error("ERROR TOAST");
-  toast.success("SUCCESS TOAST");
-  toast.info("INFO TOAST");
-  toast.warn("WARN TOAST");
+  // toast.error("ERROR TOAST");
+  // toast.success("SUCCESS TOAST");
+  // toast.info("INFO TOAST");
+  // toast.warn("WARN TOAST");
 
   // function to create custom toast
   const successItem = () => {
