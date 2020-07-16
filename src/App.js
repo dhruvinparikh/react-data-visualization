@@ -9,6 +9,8 @@ import Pie from "./component/pie";
 import Bar from "./component/bar";
 import Bubble from "./component/bubble";
 import CrazyLine from "./component/crazyLine";
+import Doughnut from "./component/doughnut";
+import DynamicDoughnut from "./component/dynamic-doughnut";
 // import Features from "./component/Features";
 import {
   BrowserRouter as Router,
@@ -49,6 +51,12 @@ const NavBar = () => {
           </Route>
           <Route path="/crazyline" component={CrazyLine}>
             <CrazyLine />
+          </Route>
+          <Route path="/doughnut" component={Doughnut}>
+            <Doughnut />
+          </Route>
+          <Route path="/dynamicdoughnut" component={DynamicDoughnut}>
+            <DynamicDoughnut />
           </Route>
         </Switch>
       </Router>

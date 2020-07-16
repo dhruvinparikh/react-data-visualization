@@ -61,6 +61,16 @@ const NavBar = () => {
                 CrazyLine
               </ReactBootStrap.Nav.Link>
             </Link>
+            <Link to="/doughnut">
+              <ReactBootStrap.Nav.Link eventKey={6} href="#doughnut">
+                Doughnut
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/dynamicdoughnut">
+              <ReactBootStrap.Nav.Link eventKey={7} href="#dynamicdoughnut">
+                Dynamic Doughnut
+              </ReactBootStrap.Nav.Link>
+            </Link>
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>

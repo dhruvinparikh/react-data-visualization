@@ -63,39 +63,7 @@ function Graph() {
     };
     setBarData(newState);
   }, 5000);
-  // componentWillMount(){
-  // 	this.setState(initialState);
-  // },
-  // componentDidMount(){
 
-  // 	var _this = this;
-
-  // 	setInterval(function(){
-  // 		var oldDataSet = _this.state.datasets[0];
-  // 		var newData = [];
-
-  // 		for(var x=0; x< _this.state.labels.length; x++){
-  // 			newData.push(Math.floor(Math.random() * 100));
-  // 		}
-
-  // 		var newDataSet = {
-  // 			...oldDataSet
-  // 		};
-
-  // 		newDataSet.data = newData;
-  // 		newDataSet.backgroundColor = color();
-  // 		newDataSet.borderColor = color();
-  // 		newDataSet.hoverBackgroundColor = color();
-  // 		newDataSet.hoverBorderColor = color();
-
-  // 		var newState = {
-  // 			...initialState,
-  // 			datasets: [newDataSet]
-  // 		};
-
-  // 		_this.setState(newState);
-  // 	}, 5000);
-  // },
   return <Bar data={barData} />;
 }
 
