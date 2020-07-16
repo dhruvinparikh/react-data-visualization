@@ -24,22 +24,7 @@ function LegendOptions() {
   };
 
   const [legend, setLegend] = React.useState(legendOpts);
-  const [textAreaValue, setTextAreaValue] = React.useState(
-    JSON.stringify(legendOpts)
-  );
-
-  const applyLegendSettings = () => {
-    try {
-      setLegend(JSON.parse(textAreaValue));
-    } catch (e) {
-      alert(e.message);
-      throw Error(e);
-    }
-  };
-
-  const handleChange = (event) => {
-    setTextAreaValue(event.target.value);
-  };
+  const inputEl = React.useRef(null);
 
   return (
     <div>
@@ -47,11 +32,17 @@ function LegendOptions() {
       <textarea
         cols="40"
         rows="15"
-        onChange={handleChange}
+        ref={inputEl}
         defaultValue={JSON.stringify(legend, null, 2)}
       ></textarea>
       <div>
-        <button onClick={applyLegendSettings}>Apply legend settings</button>
+        <button
+          onClick={() => {
+            setLegend(JSON.parse(inputEl.current.value));
+          }}
+        >
+          Apply legend settings
+        </button>
       </div>
       <Pie data={data} legend={legend} redraw />
     </div>
