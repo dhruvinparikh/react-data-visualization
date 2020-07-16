@@ -57,14 +57,14 @@ const Dankmemes = () => {
                     beginAtZero: true
                   },
                   gridLines: {
-                    display: false
+                    display: true
                   }
                 }
               ],
               xAxes: [
                 {
                   gridLines: {
-                    display: false
+                    display: true
                   }
                 }
               ]
