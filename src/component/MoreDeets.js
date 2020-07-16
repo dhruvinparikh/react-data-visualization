@@ -22,16 +22,16 @@ const MoreDeets = () => {
       // draggable to remove
       draggable: true,
       // position for toast
-      position: toast.POSITION.TOP_CENTER
+      position: toast.POSITION.TOP_CENTER,
     });
   };
   // we will have a call here
   axios
     .get("/fdsajifsda")
-    .then(res => {
+    .then((res) => {
       console.log(res);
     })
-    .catch(err => {
+    .catch((err) => {
       if (err) {
         toast("axios api error", {
           // class name for css
@@ -41,7 +41,7 @@ const MoreDeets = () => {
           // draggable to remove
           draggable: true,
           // position for toast
-          position: toast.POSITION.TOP_CENTER
+          position: toast.POSITION.TOP_CENTER,
         });
       }
     });

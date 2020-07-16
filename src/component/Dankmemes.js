@@ -12,7 +12,7 @@ const Dankmemes = () => {
     let empAge = [];
     axios
       .get("http://dummy.restapiexample.com/api/v1/employees")
-      .then(res => {
+      .then((res) => {
         console.log(res);
         for (const dataObj of res.data.data) {
           empSal.push(parseInt(dataObj.employee_salary));
@@ -25,12 +25,12 @@ const Dankmemes = () => {
               label: "level of thiccness",
               data: empSal,
               backgroundColor: ["rgba(75, 192, 192, 0.6)"],
-              borderWidth: 4
-            }
-          ]
+              borderWidth: 4,
+            },
+          ],
         });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
     console.log(empSal, empAge);
@@ -54,21 +54,21 @@ const Dankmemes = () => {
                   ticks: {
                     autoSkip: true,
                     maxTicksLimit: 10,
-                    beginAtZero: true
+                    beginAtZero: true,
                   },
                   gridLines: {
-                    display: true
-                  }
-                }
+                    display: true,
+                  },
+                },
               ],
               xAxes: [
                 {
                   gridLines: {
-                    display: true
-                  }
-                }
-              ]
-            }
+                    display: true,
+                  },
+                },
+              ],
+            },
           }}
         />
       </div>
