@@ -71,6 +71,41 @@ const NavBar = () => {
                 Dynamic Doughnut
               </ReactBootStrap.Nav.Link>
             </Link>
+            <Link to="/horizontalbar">
+              <ReactBootStrap.Nav.Link eventKey={8} href="#horizontalbar">
+                Horizontal bar
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/legendoptions">
+              <ReactBootStrap.Nav.Link eventKey={10} href="#legendoptions">
+                Legend Options
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/line">
+              <ReactBootStrap.Nav.Link eventKey={11} href="#line">
+                Line
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/polar">
+              <ReactBootStrap.Nav.Link eventKey={12} href="#polar">
+                Polar
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/radar">
+              <ReactBootStrap.Nav.Link eventKey={13} href="#radar">
+                Radar
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/randomline">
+              <ReactBootStrap.Nav.Link eventKey={14} href="#randomline">
+                Random line
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/scatter">
+              <ReactBootStrap.Nav.Link eventKey={15} href="#scatter">
+                Scatter
+              </ReactBootStrap.Nav.Link>
+            </Link>
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>

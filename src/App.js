@@ -1,9 +1,7 @@
 import React from "react";
 import "./App.css";
-// import * as ReactBootStrap from "react-bootstrap";
 import DankMemes from "./component/Dankmemes";
 import Navbar from "./component/Navbar";
-// import Pricing from "./component/Pricing";
 import MoreDeets from "./component/MoreDeets";
 import Pie from "./component/pie";
 import Bar from "./component/bar";
@@ -11,7 +9,14 @@ import Bubble from "./component/bubble";
 import CrazyLine from "./component/crazyLine";
 import Doughnut from "./component/doughnut";
 import DynamicDoughnut from "./component/dynamic-doughnut";
-// import Features from "./component/Features";
+import HorizontalBar from "./component/horizontal-bar";
+import LegendOptions from "./component/legend-options";
+import Line from "./component/line";
+import Polar from "./component/polar";
+import Radar from "./component/radar";
+import RandomLine from "./component/randomizedLine";
+import Scatter from "./component/scatter";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,12 +33,6 @@ const NavBar = () => {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          {/* <Route path="/Features" component={Features}>
-            <Features />
-          </Route> */}
-          {/* <Route path="/Pricing" component={Pricing}>
-            <Pricing />
-          </Route> */}
           <Route path="/Moredeets" component={MoreDeets}>
             <MoreDeets />
           </Route>
@@ -57,6 +56,27 @@ const NavBar = () => {
           </Route>
           <Route path="/dynamicdoughnut" component={DynamicDoughnut}>
             <DynamicDoughnut />
+          </Route>
+          <Route path="/horizontalbar" component={HorizontalBar}>
+            <HorizontalBar />
+          </Route>
+          <Route path="/legendoptions" component={LegendOptions}>
+            <LegendOptions />
+          </Route>
+          <Route path="/line" component={Line}>
+            <Line />
+          </Route>
+          <Route path="/polar" component={Polar}>
+            <Polar />
+          </Route>
+          <Route path="/radar" component={Radar}>
+            <Radar />
+          </Route>
+          <Route path="/randomline" component={RandomLine}>
+            <RandomLine />
+          </Route>
+          <Route path="/scatter" component={Scatter}>
+            <Scatter />
           </Route>
         </Switch>
       </Router>
