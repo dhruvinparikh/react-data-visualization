@@ -6,6 +6,9 @@ import Navbar from "./component/Navbar";
 // import Pricing from "./component/Pricing";
 import MoreDeets from "./component/MoreDeets";
 import Pie from "./component/pie";
+import Bar from "./component/bar";
+import Bubble from "./component/bubble";
+import CrazyLine from "./component/crazyLine";
 // import Features from "./component/Features";
 import {
   BrowserRouter as Router,
@@ -35,8 +38,17 @@ const NavBar = () => {
           <Route path="/Dankmemes" component={DankMemes}>
             <DankMemes />
           </Route>
-          <Route path="/mix" component={Pie}>
+          <Route path="/pie" component={Pie}>
             <Pie />
+          </Route>
+          <Route path="/bar" component={Bar}>
+            <Bar />
+          </Route>
+          <Route path="/bubble" component={Bubble}>
+            <Bubble />
+          </Route>
+          <Route path="/crazyline" component={CrazyLine}>
+            <CrazyLine />
           </Route>
         </Switch>
       </Router>

@@ -12,13 +12,13 @@ const data = {
   ],
 };
 
-export default class extends React.Component {
-  render() {
-    return (
-      <div>
-        <h2>Pie Example</h2>
-        <Pie data={data} />
-      </div>
-    );
-  }
+function PieComponent() {
+  return (
+    <div>
+      <h2>Pie Example</h2>
+      <Pie data={data} />
+    </div>
+  );
 }
+
+export default PieComponent;

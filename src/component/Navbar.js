@@ -41,9 +41,24 @@ const NavBar = () => {
                 Dank memes
               </ReactBootStrap.Nav.Link>
             </Link>
-            <Link to="/mix">
-              <ReactBootStrap.Nav.Link eventKey={2} href="#mix">
-                Mix
+            <Link to="/pie">
+              <ReactBootStrap.Nav.Link eventKey={3} href="#pie">
+                Pie
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/bar">
+              <ReactBootStrap.Nav.Link eventKey={4} href="#bar">
+                Bar
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/bubble">
+              <ReactBootStrap.Nav.Link eventKey={4} href="#bubble">
+                Bubble
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to="/crazyLine">
+              <ReactBootStrap.Nav.Link eventKey={5} href="#crazyline">
+                CrazyLine
               </ReactBootStrap.Nav.Link>
             </Link>
           </ReactBootStrap.Nav>
