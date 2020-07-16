@@ -5,6 +5,7 @@ import DankMemes from "./component/Dankmemes";
 import Navbar from "./component/Navbar";
 // import Pricing from "./component/Pricing";
 import MoreDeets from "./component/MoreDeets";
+import Pie from "./component/pie";
 // import Features from "./component/Features";
 import {
   BrowserRouter as Router,
@@ -33,6 +34,9 @@ const NavBar = () => {
           </Route>
           <Route path="/Dankmemes" component={DankMemes}>
             <DankMemes />
+          </Route>
+          <Route path="/mix" component={Pie}>
+            <Pie />
           </Route>
         </Switch>
       </Router>

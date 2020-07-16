@@ -41,6 +41,11 @@ const NavBar = () => {
                 Dank memes
               </ReactBootStrap.Nav.Link>
             </Link>
+            <Link to="/mix">
+              <ReactBootStrap.Nav.Link eventKey={2} href="#mix">
+                Mix
+              </ReactBootStrap.Nav.Link>
+            </Link>
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
